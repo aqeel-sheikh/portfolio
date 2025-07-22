@@ -16,13 +16,13 @@
                     <div id="logo-img"><img src="images/logo.png" alt="Logo"></div>
                 </div>
                 <div class="right-side-links">
-                    <div id="home" class="header-links"><a href="index.html">Home</a></div>
-                    <div id="projects" class="header-links"><a href="#">Projects</a></div>
-                    <div id="contact" class="header-links"><a href="#">Contact</a></div>
+                    <div class="header-links"><a href="#home">Home</a></div>
+                    <div class="header-links"><a href="#projects">Projects</a></div>
+                    <div class="header-links"><a href="#social-links">Contact</a></div>
                 </div>
             </nav>
         </header>
-        <section class="hero-section">
+        <section id="home" class="hero-section">
             <div>
                 <img id="waving_hand" src="images/waving_hand.svg" alt="SVG">
             </div>
@@ -39,7 +39,7 @@
                     <button id="projects-btn" class="btn">My Projects</button>
                     <button id="lets-talk-btn" class="btn">Let's Talk</button>
                 </div>
-                
+
             </div>
         </section>
     </div>
@@ -74,54 +74,110 @@
                 <div class="skill-name">HTML5</div>
                 <div class="skill-name">CSS3</div>
                 <div class="skill-name">JavaScript (ES6+)</div>
+                <div class="skill-name">DOM Manipulation</div>
+                <div class="skill-name">Node.js</div>
+                <div class="skill-name">Git & GitHub</div>
+                <div class="skill-name">VS Code</div>
             </div>
             <div class="skill-card">
                 <!-- <div class="skill-card-title">Tools & Workflow</div> -->
-                <div class="skill-name">Git & GitHub</div>
-                <div class="skill-name">VS Code</div>
-                <div class="skill-name">Postman</div>
-                <div class="skill-name">NPM / Yarn</div>
+                <!-- <div class="skill-name">Postman</div> -->
+                <!-- <div class="skill-name">NPM / Yarn</div> -->
             </div>
             <div class="skill-card">
                 <!-- <div class="skill-card-title">Frontend Frameworks / Libraries</div> -->
-                <div class="skill-name">React.js</div>
-                <div class="skill-name">Tailwind CSS / Bootstrap</div>
-                <div class="skill-name">DOM Manipulation</div>
-                <div class="skill-name">REST API Integration</div>
+                <!-- <div class="skill-name">React.js</div> -->
+                <!-- <div class="skill-name">Tailwind CSS / Bootstrap</div> -->
+                <!-- <div class="skill-name">REST API Integration</div> -->
             </div>
             <div class="skill-card">
                 <!-- <div class="skill-card-title">Additional Skills</div> -->
-                <div class="skill-name">Responsive Web Design</div>
-                <div class="skill-name">Accessibility (a11y)</div>
-                <div class="skill-name">Basic SEO</div>
-                <div class="skill-name">Deployment (Netlify, Vercel, Render, Railway)</div>
+                <!-- <div class="skill-name">Responsive Web Design</div> -->
+                <!-- <div class="skill-name">Accessibility (a11y)</div> -->
+                <!-- <div class="skill-name">Basic SEO</div> -->
+                <!-- <div class="skill-name">Deployment (Netlify, Vercel, Render, Railway)</div> -->
             </div>
             <div class="skill-card">
                 <!-- <div class="skill-card-title">Backend Development</div> -->
-                <div class="skill-name">Node.js</div>
-                <div class="skill-name">Express.js</div>
-                <div class="skill-name">MongoDB (Mongoose)</div>
-                <div class="skill-name">SQL / PostgreSQL</div>
-                <div class="skill-name">Authentication (JWT, Sessions)</div>
+                <!-- <div class="skill-name">Express.js</div> -->
+                <!-- <div class="skill-name">MongoDB (Mongoose)</div> -->
+                <!-- <div class="skill-name">SQL / PostgreSQL</div> -->
+                <!-- <div class="skill-name">Authentication (JWT, Sessions)</div> -->
             </div>
             <div class="skill-card">
-                <div class="skill-card-title">Currently Learning</div>
-                <div class="skill-name">TypeScript</div>
-                <div class="skill-name">Next.js</div>
-                <div class="skill-name">Web Performance Optimization</div>
+                <!-- <div class="skill-card-title">Currently Learning</div> -->
+                <!-- <div class="skill-name">TypeScript</div> -->
+                <!-- <div class="skill-name">Next.js</div> -->
+                <!-- <div class="skill-name">Web Performance Optimization</div> -->
             </div>
 
         </div>
     </section>
-    <div class="social-links">
-                    <a href="https://github.com/aqeel-sheikh/aqeel-sheikh"><img class="social" src="/images/github.svg" alt="GitHub"></a>
-                    <a href="https://x.com/aqeell_sheikh"><img class="social" src="/images/twitter-x.svg" alt="X - Formaly known as twitter"></a>
-                    <a href="mailto:sheikhakeel1102@gmail.com"><img class="social" src="/images/gmail.svg" alt="Email"></a>
+    <section id="projects" class="projects">
+        <div class="title">Projects</div><br>
+        <div class="projects-wrapper">
+            <div class="project-card-wrapper">
+
+                <div class="project-card">
+                    <div class="project-card-title">Calculator</div>
+                    <div class="project-description">
+                        A responsive, browser-based calculator built using HTML, CSS, and JavaScript. It performs basic
+                        arithmetic operations like addition, subtraction, multiplication, and division. Designed with a
+                        clean UI and interactive button feedback for a smooth user experience.
+                    </div>
+                    <div class="btns">
+                        <button class="pbtn btn"
+                            onclick="location.href='https://aqeel-sheikh.github.io/odin-calculator/'">Live</button>
+                        <button class="pbtn btn"
+                            onclick="location.href='https://github.com/aqeel-sheikh/odin-calculator.git'">Code</button>
+                    </div>
                 </div>
+            </div>
+            <div class="project-card-wrapper">
+
+                <div class="project-card">
+                    <div class="project-card-title">Rock, Paper, Scissors</div>
+                    <div class="project-description">A browser-based Rock Paper Scissors game created with HTML, CSS,
+                        and JavaScript. Players compete against a computer that picks random moves. The game features
+                        score tracking, clear visuals, and responsive button interactions for an enjoyable experience.
+                    </div>
+                    <div class="btns">
+                        <button class="pbtn btn"
+                            onclick="location.href='https://aqeel-sheikh.github.io/odin-rock_paper_scissors/'"">Live</button>
+                        <button class=" pbtn btn"
+                            onclick="location.href='https://github.com/aqeel-sheikh/odin-rock_paper_scissors.git'">Code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card-wrapper">
+
+                <div class="project-card">
+                    <div class="project-card-title">Etch-A-Sketch</div>
+                    <div class="project-description">A web-based pixel drawing tool made with HTML, CSS, and JavaScript.
+                        Users draw by hovering over a grid that can be resized. Includes reset functionality, a sleek
+                        design, and responsive layout, making it fun and easy to use on any screen size or device.
+                    </div>
+                    <div class="btns">
+                        <button class="pbtn btn"
+                            onclick="location.href= 'https://aqeel-sheikh.github.io/odin-Etch-a-Sketch/'">Live</button>
+                        <button class=" pbtn btn"
+                            onclick="location.href='https://github.com/aqeel-sheikh/odin-Etch-a-Sketch.git'">Code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="social-links" class="social-links">
+        <a href="https://github.com/aqeel-sheikh/aqeel-sheikh"><img class="social" src="/images/github.svg"
+                alt="GitHub"></a>
+        <a href="https://x.com/aqeell_sheikh"><img class="social" src="/images/twitter-x.svg"
+                alt="X - Formaly known as twitter"></a>
+        <a href="mailto:sheikhakeelw01@gmail.com"><img class="social" src="/images/gmail.svg" alt="Email"></a>
+    </div>
     <footer class="footer">
-        
         & Copyright © Aqeel Sheikh 2025
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

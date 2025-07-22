@@ -10,7 +10,9 @@
 * {
   margin: 0;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 @media (prefers-reduced-motion: no-preference) {
   html {
     interpolate-size: allow-keywords;
@@ -24,9 +26,11 @@ body {
   background: linear-gradient(135deg, #0f021f, #3a0ca3, #7209b7);
   color: white;
 }
-::selection{
+
+::selection {
   background-color: purple;
 }
+
 img,
 picture,
 video,
@@ -73,13 +77,11 @@ h6 {
 
 /* Header + Hero */
 .wrapper {
-  /* background: linear-gradient(135deg, #0f021f, #3a0ca3, #7209b7); */
   color: #f8fafc;
   padding-top: 1rem;
 }
 
 /* Header */
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -91,7 +93,6 @@ nav {
   font-weight: 450;
   color: white;
   background: linear-gradient(135deg, #0f021f, #3a0ca3, #7209b700);
-
 }
 
 #logo-img {
@@ -282,6 +283,71 @@ span {
   margin: 10px;
 }
 
+.skill-name:hover {
+  box-shadow: 0 0 20px #4f03ff, 0 0 20px #3a0ca3;
+}
+
+/* Projects Section */
+.projects {
+  padding: 0px 100px 100px 100px;
+  text-align: center;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.project-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #4f03ff;
+  border-radius: 10px;
+  width: 350px;
+  padding: 10px;
+  box-shadow: 0 0 10px #4f03ff, 0 0 10px #3a0ca3;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.project-card-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.project-card>.btns {
+  position: relative;
+  left: 100px;
+  bottom: 0px;
+}
+
+.project-card button:last-child {
+  margin-left: 20px;
+}
+
+.project-card-title {
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: 1.7;
+  font-weight: bolder;
+  color: #4f03ff;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.pbtn {
+  margin: 0;
+  padding: 5px 10px;
+  border: 2px solid #4f03ff;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -294,4 +360,7 @@ footer {
   justify-content: center;
   padding: 10px;
   gap: 30px;
+}
+.social-links a:nth-child(n):hover{
+  transform: scale(1.5);
 }
