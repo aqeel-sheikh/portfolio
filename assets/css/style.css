@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'ibmPlex';
+  src: url('../fonts/ibmPlexMono/ibmplexmono-regular-webfont.woff2') format('woff2'),
+       url('../fonts/ibmPlexMono/ibmplexmono-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'ubuntu';
+  src: url('../fonts/ubuntu/ubuntu-regular-webfont.woff2') format('woff2'),
+       url('../fonts/ubuntu/ubuntu-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+:root{
+  --bg-color: #292F36;
+  --primary-color1: #12F7D6;
+  --primary-color2: #fff;
+
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: var(--primary-color2);
+}
+header , nav, nav ul , .nav-list-right div, .nav-social-link{
+  display: flex;
+  align-items: center;
+}
+header{
+  height: 100vh;
+  background-color:var(--bg-color);
+  flex-direction: column;
+}
+nav{
+  justify-content: space-between;
+  padding: 2rem;
+  color: var(--primary-color2);
+  width: 90%;
+  border-bottom: 1px solid #43454d81;
+  font-family: 'ibmPlex';
+}
+nav ul {
+  gap: 1rem;
+  list-style: none;
+}
+nav ul li a{
+  text-decoration: none;
+  color: var(--primary-color2);
+}
+.nav-list-left{
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.nav-list-left li:first-child{
+  color: var(--primary-color1);
+}
+.nav-list-right-social img{
+  width: 18px;
+  height: 18px;
+}
+.nav-list-right, .nav-list-right-left{
+  font-size: 1.25rem;
+  gap: 4rem;
+}
+.nav-list-right-social li a{
+  font-size: .9rem;
+  gap: .5rem;
+}
+.search-box{
+  border-radius: 20px;
+  font-size: 1rem;
+  padding: .1rem 1rem;
+  font-weight: 300;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.911);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.search-box:focus{
+  border: none;
+  outline: 1px solid var(--primary-color1);
+}
+.search-container{
+  position: relative;
+}
+.search-container img{
+  position: absolute;
+  width: 20px;
+  top: .28rem;
+  right: 1rem;
+}

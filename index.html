@@ -1,149 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
-</head>
-
-<body>
-    <div class="wrapper">
-        <header>
-            <nav>
-                <div class="logo">
-                    <div id="logo-img"><img src="images/logo.png" alt="Logo"></div>
-                </div>
-                <div class="right-side-links">
-                    <div class="header-links"><a href="#home">Home</a></div>
-                    <div class="header-links"><a href="#projects">Projects</a></div>
-                    <div class="header-links"><a href="#social-links">Contact</a></div>
-                </div>
-            </nav>
-        </header>
-        <section id="home" class="hero-section">
-            <div>
-                <img id="waving_hand" src="images/waving_hand.svg" alt="SVG">
-            </div>
-            <div class="hero-text-and-btns">
-                <div class="hero-section-text">
-                    <p>WELCOME TO MY ZONE</p>
-                    <p>Hi,I'm <span>Aqeel Sheikh</span></p>
-                    <p>FullStack Web Developer</p>
-                    <p>The guy who makes ideas run on code — Fueled by curiosity, driven by caffeine, and <br>focused on
-                        building things that make sense — and
-                        make a difference.</p>
-                </div>
-                <div class="btns">
-                    <button id="projects-btn" class="btn">My Projects</button>
-                    <button id="lets-talk-btn" class="btn">Let's Talk</button>
-                </div>
-
-            </div>
-        </section>
-    </div>
-    <section class="about-section">
-        <div class="title">About Me</div>
-        <div class="about-img-and-text">
-            <div class="about-img">
-                <img src="images/pfp.jpg" alt="Image">
-            </div>
-            <div class="about-text">
-                <p>Hey, I’m Aqeel — a passionate self-taught web developer with a strong drive to build, learn, and
-                    grow every day. I recently completed The Odin Project: Foundations and am diving deep into fullstack
-                    web development. With a love for clean code and pixel-perfect designs, I aim to create meaningful
-                    digital experiences that not only work well but feel right.
-                </p>
-                <p>I thrive in focused learning, often spending 10+ hours a day sharpening my skills, solving real-world
-                    problems, and pushing myself beyond limits. From frontend interfaces to backend logic, I enjoy
-                    turning ideas into interactive, performant web applications.
-                </p>
-                <p>Currently, I’m on a mission to land my first dev role, contribute to exciting projects, and turn my
-                    passion into something bigger. When I’m not coding, you’ll probably find me reading manga, sipping
-                    coffee, or exploring the next thing to master.
-                </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Aqeel Sheikh</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-list-left">
+          <li>&lt;C/&gt;</li>
+          <li>AqeelSheikh</li>
+        </ul>
+        <ul class="nav-list-right">
+          <div class="nav-list-right-left">
+            <ul class="nav-list-right-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="search-container">
+              <input type="search" class="search-box" />
+              <img src="assets/images/icons/search.svg" alt="">
             </div>
         </div>
-    </section>
-    <section class="skills-section">
-        <div class="title">Skills</div>
-        <div class="skills">
-            <div class="skill-card">
-                <div class="skill-name">HTML5</div>
-                <div class="skill-name">CSS3</div>
-                <div class="skill-name">JavaScript (ES6+)</div>
-                <div class="skill-name">DOM Manipulation</div>
-                <div class="skill-name">Node.js</div>
-                <div class="skill-name">Git & GitHub</div>
-                <div class="skill-name">VS Code</div>
-            </div>
-        </div>
-    </section>
-    <section id="projects" class="projects">
-        <div class="title">Projects</div><br>
-        <div class="projects-wrapper">
-            <div class="project-card-wrapper">
-
-                <div class="project-card">
-                    <div class="project-card-title">Calculator</div>
-                    <div class="project-description">
-                        A responsive, browser-based calculator built using HTML, CSS, and JavaScript. It performs basic
-                        arithmetic operations like addition, subtraction, multiplication, and division. Designed with a
-                        clean UI and interactive button feedback for a smooth user experience.
-                    </div>
-                    <div class="btns">
-                        <button class="pbtn btn"
-                            onclick="location.href='https://aqeel-sheikh.github.io/odin-calculator/'">Live</button>
-                        <button class="pbtn btn"
-                            onclick="location.href='https://github.com/aqeel-sheikh/odin-calculator.git'">Code</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card-wrapper">
-
-                <div class="project-card">
-                    <div class="project-card-title">Rock, Paper, Scissors</div>
-                    <div class="project-description">A browser-based Rock Paper Scissors game created with HTML, CSS,
-                        and JavaScript. Players compete against a computer that picks random moves. The game features
-                        score tracking, clear visuals, and responsive button interactions for an enjoyable experience.
-                    </div>
-                    <div class="btns">
-                        <button class="pbtn btn"
-                            onclick="location.href='https://aqeel-sheikh.github.io/odin-rock_paper_scissors/'"">Live</button>
-                        <button class=" pbtn btn"
-                            onclick="location.href='https://github.com/aqeel-sheikh/odin-rock_paper_scissors.git'">Code</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card-wrapper">
-
-                <div class="project-card">
-                    <div class="project-card-title">Etch-A-Sketch</div>
-                    <div class="project-description">A web-based pixel drawing tool made with HTML, CSS, and JavaScript.
-                        Users draw by hovering over a grid that can be resized. Includes reset functionality, a sleek
-                        design, and responsive layout, making it fun and easy to use on any screen size or device.
-                    </div>
-                    <div class="btns">
-                        <button class="pbtn btn"
-                            onclick="location.href= 'https://aqeel-sheikh.github.io/odin-Etch-a-Sketch/'">Live</button>
-                        <button class=" pbtn btn"
-                            onclick="location.href='https://github.com/aqeel-sheikh/odin-Etch-a-Sketch.git'">Code</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div id="social-links" class="social-links">
-        <a href="https://github.com/aqeel-sheikh/aqeel-sheikh"><img class="social" src="images/github.svg"
-                alt="GitHub"></a>
-        <a href="https://x.com/aqeell_sheikh"><img class="social" src="images/twitter-x.svg"
-                alt="X - Formaly known as twitter"></a>
-        <a href="mailto:sheikhakeelw01@gmail.com"><img class="social" src="images/gmail.svg" alt="Email"></a>
-    </div>
-    <footer class="footer">
-        & Copyright © Aqeel Sheikh 2025
-    </footer>
-</body>
-
+          <ul class="nav-list-right-social">
+            <li>
+              <a href="https://x.com/aqeell_sheikh" class="nav-social-link"
+                ><img src="assets/images/icons/twitter-x.svg" alt="X(twitter)" /><span
+                  >Twitter</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="https://discord.com/users/akeell" class="nav-social-link"
+                ><img src="assets/images/icons/discord.svg" alt="Discord" /><span
+                  >Discord</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/aqeel-sheikh" class="nav-social-link"
+                ><img src="assets/images/icons/github.svg" alt="GitHub" /><span
+                  >Github</span
+                ></a>
+            </li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>
