@@ -37,7 +37,7 @@ nav ul,
   align-items: center;
 }
 header {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: var(--bg-color);
   flex-direction: column;
@@ -143,6 +143,7 @@ nav ul li a {
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .hero-content-left {
   align-items: center;
@@ -198,8 +199,13 @@ nav ul li a {
 .tag {
   color: var(--primary-color3);
 }
+.hero-content-right{
+  flex-wrap: wrap;
+}
 .right-info-title {
   font-size: 2.2rem;
+  text-indent: 1rem;
+  padding-bottom: 1rem;
 }
 .right-info-title .tag {
   font-size: initial;
@@ -210,15 +216,22 @@ nav ul li a {
 .para-tag {
   font-size: 0.8rem;
 }
+.right-info-title p:last-child{
+  line-height: 1;
+}
 .right-info-para {
   font-family: ibmPlex;
   font-size: small;
-  padding: 0.2rem 0;
+  padding: 0.2rem 0.2rem 0 1rem;
+}
+.break{
+  display: block;
 }
 .hero-cta {
   padding: 1rem 0;
   gap: 1rem;
   align-items: center;
+  text-indent: 1rem;
 }
 .hero-cta p {
   font-size: 1.8rem;
@@ -243,7 +256,7 @@ nav ul li a {
   background-color: var(--bg-color3);
   height: max-content;
   padding: 1.3rem;
-  border-radius: 80px;
+  border-radius: 60px;
 }
 .capsule-para {
   align-items: center;
