@@ -7,6 +7,9 @@
     .hero-content, .hero-content-right{
         justify-content: center;
     }
+    .hero-content-right{
+      padding-bottom: 2rem;
+    }
     .hero-content{
         gap: 5rem;
     }
@@ -52,6 +55,18 @@
     }
     .right-info-title {
         font-size: 2rem
+    }
+    .about-footer{
+      display: none;
+    }
+    .about-container{
+      padding: 0 0;
+    }
+    .about-content-title{
+      margin: 0 auto;
+    }
+    .about-content-text{
+      font-size: .9rem;
     }
 }
 @media (max-width: 680px){
