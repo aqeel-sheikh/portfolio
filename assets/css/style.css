@@ -102,6 +102,7 @@ nav ul li a {
 }
 /* Hero section */
 .hero-section,
+.side-nav,
 .hero-container,
 .hero-content,
 .hero-content-left,
@@ -109,12 +110,24 @@ nav ul li a {
 .hero-content-right,
 .hero-cta,
 .hero-cta-button,
-.capsule-para {
+.capsule-para{
   display: flex;
 }
 .hero-section {
   width: 100%;
   justify-content: center;
+}
+.side-nav{
+  background-color: var(--bg-color3);
+  height: min-content;
+  padding: .9rem .6rem;
+  border-radius: 40px;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.side-nav img{
+  cursor: pointer;
 }
 .hero-container {
   width: 90%;
@@ -241,5 +254,6 @@ nav ul li a {
   color: var(--primary-color1);
 }
 .capsule-para p:last-child {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-family: ibmPlex;
 }
