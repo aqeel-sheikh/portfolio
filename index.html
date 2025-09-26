@@ -488,7 +488,8 @@
           </div>
           <div class="contact-content content">
             <p class="form-title">Send Me A Message</p>
-            <form action="" id="my-form">
+            <form id="my-form" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="31707477-d8f5-4109-b5f2-393217fd51fb">
               <div>
                 <label for="clientName"
                   >Your name* <br />
@@ -520,6 +521,7 @@
                   required
                 ></textarea>
               </label>
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
               <button type="submit" id="my-form-button">
                 <span>Send Message </span>
                 <img src="assets/images/icons/send.svg" alt="send" />
