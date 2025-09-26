@@ -13,6 +13,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "ubuntuLight";
+  src: url("../fonts/ubuntu/ubuntu-light-webfont.woff2") format("woff2"),
+    url("../fonts/ubuntu/ubuntu-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --bg-color: #292f36;
@@ -467,22 +474,24 @@ nav ul li a {
 .skills-card img:active {
   transform: scale(1);
 }
-.skill-html img:hover, .skill-git img:hover{
+.skill-html img:hover,
+.skill-git img:hover {
   filter: drop-shadow(0 5px 10px #ff66004f);
 }
-.skill-css img:hover, .skill-vscode img:hover{
+.skill-css img:hover,
+.skill-vscode img:hover {
   filter: drop-shadow(0 5px 10px #0059ff4f);
 }
-.skill-js img:hover{
+.skill-js img:hover {
   filter: drop-shadow(0 5px 10px #ffd9004f);
 }
-.skill-gsap img:hover{
+.skill-gsap img:hover {
   filter: drop-shadow(0 5px 10px #00ff154f);
 }
-.skill-github img:hover{
+.skill-github img:hover {
   filter: drop-shadow(0 5px 10px #ffffff4f);
 }
-.skill-netlify img:hover{
+.skill-netlify img:hover {
   filter: drop-shadow(0 5px 10px #00b7ff4f);
 }
 .skill-figure {
@@ -498,16 +507,16 @@ nav ul li a {
   font-family: ibmPlex;
   opacity: 0;
 }
-.skill-html::after{
+.skill-html::after {
   content: "HTML";
 }
-.skill-css::after{
+.skill-css::after {
   content: "CSS";
 }
-.skill-js::after{
+.skill-js::after {
   content: "JavaScript";
 }
-.skill-git::after{
+.skill-git::after {
   content: "Git";
 }
 .skill-github::after {
@@ -691,34 +700,34 @@ nav ul li a {
   background-image: url("../images/works/scrollScape.png");
 }
 /* Contact Section */
-.form-title{
+.form-title {
   margin: 3rem auto;
   border: 2px solid var(--primary-color1);
   width: fit-content;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   font-size: 1.2rem;
   color: var(--primary-color1);
   border-radius: 30px 0px 30px 0px;
 }
-#my-form{
+#my-form {
   display: flex;
   flex-direction: column;
 }
-#my-form > div{
+#my-form > div {
   position: relative;
   margin-bottom: 6rem;
 }
-#my-form label{
+#my-form label {
   color: var(--primary-color1);
 }
-#my-form > div label{
+#my-form > div label {
   position: absolute;
   width: 50%;
 }
-#my-form > div label:last-child{
+#my-form > div label:last-child {
   left: 50%;
 }
-#my-form > div input{
+#my-form > div input {
   position: absolute;
   width: 90%;
 }
@@ -727,7 +736,8 @@ nav ul li a {
   flex-grow: 1;
   width: 96%;
 }
-#my-form input, #my-form textarea{
+#my-form input,
+#my-form textarea {
   appearance: none;
   background: none;
   border: none;
@@ -735,28 +745,29 @@ nav ul li a {
   color: var(--primary-color2);
   padding: 1rem 0 0 0;
 }
-#my-form input:focus, #my-form textarea:focus{
+#my-form input:focus,
+#my-form textarea:focus {
   outline: none;
   border-bottom: 2px solid var(--primary-color1);
 }
-#my-form-button{
+#my-form-button {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   font-size: 1.2rem;
   align-items: center;
   margin: 2rem 0;
   width: fit-content;
   align-self: center;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   background-color: var(--bg-color3);
   color: #fff;
   border: 1px solid var(--primary-color3);
   border-radius: 12px;
   cursor: pointer;
   position: relative;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-#my-form-button::before{
+#my-form-button::before {
   content: "";
   position: absolute;
   border-radius: 12px;
@@ -765,20 +776,43 @@ nav ul li a {
   left: 0;
   bottom: 0;
   background-color: var(--primary-color1);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   z-index: 0;
 }
-#my-form-button span, #my-form-button img{
+#my-form-button span,
+#my-form-button img {
   position: relative;
   z-index: 1;
 }
-#my-form-button:hover::before{
+#my-form-button:hover::before {
   height: 100%;
 }
-#my-form-button:hover{
+#my-form-button:hover {
   color: #000;
   box-shadow: 0px 4px 14px rgba(2, 255, 213, 0.507);
 }
-#my-form-button:active{
-  transform: scale(.9);
+#my-form-button:active {
+  transform: scale(0.9);
+}
+/* Footer */
+footer {
+  display: flex;
+  padding: 1rem;
+  border-top: 1px solid var(--bg-color);
+  align-items: center;
+  justify-content: center;
+  column-gap: 5rem;
+  row-gap: 1rem;
+  flex-wrap: wrap-reverse;
+}
+footer p {
+  font-family: ubuntuLight;
+  opacity: 0.7;
+}
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
+.footer-links img:hover {
+  animation: scaleRotate .5s ease forwards;
 }
