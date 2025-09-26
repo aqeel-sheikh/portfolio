@@ -870,6 +870,9 @@ nav ul li a {
 #my-form-button:active {
   transform: scale(0.9);
 }
+#result{
+  display: none;
+}
 /* Footer */
 footer {
   display: flex;
