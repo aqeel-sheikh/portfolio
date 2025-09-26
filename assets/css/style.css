@@ -462,14 +462,28 @@ nav ul li a {
   cursor: pointer;
 }
 .skills-card img:hover {
-  box-shadow: 2px 2px 12px rgba(0, 219, 248, 0.623);
-  border-radius: 30px;
   transform: scale(1.1);
 }
 .skills-card img:active {
   transform: scale(1);
-  border-radius: 0;
-  box-shadow: none;
+}
+.skill-html img:hover, .skill-git img:hover{
+  filter: drop-shadow(0 5px 10px #ff66004f);
+}
+.skill-css img:hover, .skill-vscode img:hover{
+  filter: drop-shadow(0 5px 10px #0059ff4f);
+}
+.skill-js img:hover{
+  filter: drop-shadow(0 5px 10px #ffd9004f);
+}
+.skill-gsap img:hover{
+  filter: drop-shadow(0 5px 10px #00ff154f);
+}
+.skill-github img:hover{
+  filter: drop-shadow(0 5px 10px #ffffff4f);
+}
+.skill-netlify img:hover{
+  filter: drop-shadow(0 5px 10px #00b7ff4f);
 }
 .skill-figure {
   position: relative;
@@ -484,14 +498,23 @@ nav ul li a {
   font-family: ibmPlex;
   opacity: 0;
 }
+.skill-html::after{
+  content: "HTML";
+}
+.skill-css::after{
+  content: "CSS";
+}
+.skill-js::after{
+  content: "JavaScript";
+}
+.skill-git::after{
+  content: "Git";
+}
 .skill-github::after {
   content: "Github";
 }
 .skill-vscode::after {
   content: "Vs Code";
-}
-.skill-cursor::after {
-  content: "Cursor";
 }
 .skill-netlify::after {
   content: "Netlify";
@@ -591,7 +614,7 @@ nav ul li a {
   transition: 0.3s ease-in-out 0.2s;
   z-index: 1;
 }
-.project-name{
+.project-name {
   font-size: 1.2rem;
 }
 .project-stack,
