@@ -20,7 +20,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 :root {
   --bg-color: #292f36;
   --bg-color2: #43454d;
@@ -30,6 +29,9 @@
   --primary-color3: #98faec;
 }
 /* Global */
+html{
+  scroll-behavior: smooth;
+}
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -183,9 +185,62 @@ nav ul li a {
   flex-direction: column;
   gap: 1rem;
   margin-top: 1.5rem;
+  top: 6rem;
+  position: fixed;
+  z-index: 999;
+  left: 2rem;
 }
-.side-nav img {
+.side-nav svg {
   cursor: pointer;
+}
+.side-nav a.active{
+  background-color: var(--bg-color);
+  border-radius: 20px;
+}
+.side-nav a.active svg path{
+  fill: var(--primary-color1);
+}
+.side-nav svg:hover path{
+  fill: var(--primary-color3);
+}
+.side-nav a{
+  position: relative ;
+  padding: .5rem;
+}
+.side-nav a::before{
+  position: absolute;
+  bottom: .5rem;
+  color: #000000cc;
+  background: var(--primary-color2);
+  padding: .1rem .3rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: .9rem;
+  opacity: 0;
+}
+.side-nav a:first-child::before{
+  content: "Home";
+  right: -4.3rem;
+}
+.side-nav a:nth-child(2)::before{
+  content: "About";
+  right: -4.3rem;
+}
+.side-nav a:nth-child(3)::before{
+  content: "Skills";
+  right: -3.8rem;
+}
+.side-nav a:nth-child(4)::before{
+  content: "Work";
+  right: -3.8rem;
+}
+.side-nav a:last-child::before{
+  content: "Contact";
+  right: -4.8rem;
+}
+.side-nav a:not(.active):hover::before{
+  animation: fadeStay 2s ease forwards;
+  animation-delay: 2s;
 }
 .hero-container {
   width: 90%;
@@ -393,11 +448,11 @@ nav ul li a {
   font-family: ibmPlex;
 }
 .skills-container .tag1 {
-  left: 0;
+  left: 2%;
   top: 10%;
 }
 .skills-container .tag2 {
-  left: 0;
+  left: 2%;
   bottom: -16%;
 }
 .skills-content {
