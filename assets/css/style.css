@@ -55,6 +55,30 @@ main .container {
 .mouse-line {
   margin: 0 auto;
 }
+.title {
+  text-align: center;
+  letter-spacing: 2px;
+}
+.title p:first-child {
+  position: relative;
+  font-size: 4rem;
+  color: var(--primary-color1);
+}
+.title p:first-child::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/icons/line_with_dots.svg) no-repeat;
+  background-position: bottom;
+}
+.title p:last-child {
+  font-size: 0.8rem;
+  font-family: ibmPlex;
+  padding-top: 0.5rem;
+}
 /* Header */
 header,
 nav,
@@ -299,7 +323,7 @@ nav ul li a {
 }
 /* About Section */
 .about-section {
-  background: var(--bg-color3) url(../images/about_background.svg);
+  background: var(--bg-color3) url(../images/backgrounds/about.svg);
 }
 .about-content {
   padding: 2rem 0;
@@ -332,20 +356,24 @@ nav ul li a {
   color: var(--primary-color1);
 }
 /* Skills section */
-.skills-section {
+.skills-section,
+.works-section {
   position: relative;
   z-index: 1;
 }
-.skills-section::before {
+.skills-section::before,
+.works-section::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.03;
   z-index: -1;
-  background: url(../images/skills/skills_background.jpg) no-repeat;
+}
+.skills-section::before {
+  opacity: 0.03;
+  background: url(../images/backgrounds/skills.jpg) no-repeat;
   background-position: center;
 }
 .skills-container {
@@ -363,31 +391,7 @@ nav ul li a {
 }
 .skills-container .tag2 {
   left: 0;
-  bottom: -5%;
-}
-.skills-title {
-  text-align: center;
-  letter-spacing: 2px;
-}
-.skills-title p:first-child {
-  position: relative;
-  font-size: 4rem;
-  color: var(--primary-color1);
-}
-.skills-title p:first-child::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../images/icons/line_with_dots.svg) no-repeat;
-  background-position: bottom;
-}
-.skills-title p:last-child {
-  font-size: 0.8rem;
-  font-family: ibmPlex;
-  padding-top: 0.5rem;
+  bottom: -16%;
 }
 .skills-content {
   display: flex;
@@ -417,10 +421,6 @@ nav ul li a {
   display: flex;
   gap: 2rem;
 }
-.libraries {
-  grid-template-columns: 1fr;
-}
-
 .soft-skills .skills-card p {
   padding: 0.2rem;
   margin: 1rem 0;
@@ -453,12 +453,13 @@ nav ul li a {
   backdrop-filter: blur(5px);
   border-radius: 0 25px 0 25px;
   padding: 1rem;
-  cursor: pointer;
 }
-
 .skills-card img,
 .skills-card {
   transition: all 0.3s ease;
+}
+.skills-card img {
+  cursor: pointer;
 }
 .skills-card img:hover {
   box-shadow: 2px 2px 12px rgba(0, 219, 248, 0.623);
@@ -498,4 +499,171 @@ nav ul li a {
 .skill-figure:hover::after {
   animation: fadeStay 2s ease-in-out forwards;
   animation-delay: 1s;
+}
+/* Works section */
+.works-section {
+  background-color: var(--bg-color3);
+}
+.works-section::before {
+  opacity: 0.06;
+  background: url(../images/backgrounds/works.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.works-container {
+  position: relative;
+}
+.works-container .section-footer {
+  margin-top: 5.1rem;
+}
+.mySwiper {
+  margin-top: 3rem;
+  overflow: visible;
+  overflow-x: hidden;
+}
+.swiper-slide {
+  width: 250px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  bottom: 0;
+  transform: none;
+  color: #fff;
+  background: #0008;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.swiper-button-prev {
+  left: 50%;
+  transform: translateX(-60px);
+}
+.swiper-button-next {
+  left: 50%;
+  transform: translateX(20px);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 65vmin;
+  height: 250px;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.overlay {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0.75rem;
+  background-color: var(--bg-color3);
+  transition: 0.4s ease-in-out;
+  z-index: 1;
+}
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15vmin;
+  height: 100%;
+  padding: 0.5rem 0 0 0.5rem;
+  border: 3px solid;
+  border-image: linear-gradient(
+      to bottom,
+      var(--primary-color3) 5%,
+      rgb(0, 0, 0) 35% 65%,
+      var(--primary-color3) 95%
+    )
+    0 0 0 100%;
+  transition: 0.3s ease-in-out 0.2s;
+  z-index: 1;
+}
+.project-name{
+  font-size: 1.2rem;
+}
+.project-stack,
+.project-links,
+.project-links a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.project-stack img {
+  width: 30px;
+}
+.project-links {
+  gap: 1rem;
+  padding: 0 0 0.5rem 0;
+}
+.project-links a {
+  gap: 0.3rem;
+  color: var(--primary-color1);
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #ffffff33;
+  padding: 0 0.3rem;
+}
+.image-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45vmin;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+}
+.inset {
+  max-width: 50%;
+  margin: 0.25em 1em 1em 0;
+  border-radius: 0.25em;
+  float: left;
+}
+.text {
+  display: grid;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45vmin;
+  height: 100%;
+  padding: 3vmin 4vmin;
+  background-color: var(--bg-color3);
+  box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / 0.4);
+  overflow-y: auto;
+
+  scrollbar-color: var(--bg-color) var(--bg-color3);
+  scrollbar-width: thin;
+  scrollbar-track-color: #12f7d6;
+}
+.wrap:hover .overlay {
+  transform: translateX(-45vmin);
+}
+.wrap:hover .image-content {
+  width: 20vmin;
+  filter: blur(5px);
+}
+.wrap:hover .overlay-content {
+  border: none;
+  transition-delay: 0.2s;
+  transform: translateX(45vmin);
+}
+.project1 .image-content {
+  background-image: url("../images/works/luxeBite.png");
+}
+.project2 .image-content {
+  background-image: url("../images/works/scrollScape.png");
 }
