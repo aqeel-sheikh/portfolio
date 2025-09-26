@@ -126,6 +126,9 @@ nav ul li a {
 .nav-list-left li:first-child {
   color: var(--primary-color1);
 }
+.nav-list-right-links li a:hover{
+  color: var(--primary-color1);
+}
 .nav-list-right-social img {
   width: 18px;
   height: 18px;
@@ -138,6 +141,14 @@ nav ul li a {
 .nav-list-right-social li a {
   font-size: 0.9rem;
   gap: 0.5rem;
+}
+.nav-list-right-social li a:hover img{
+  animation: scaleRotate .8s ease forwards;
+  filter: drop-shadow(0 1px 5px var(--primary-color1));
+}
+.nav-list-right-social li a:hover span{
+  color: var(--primary-color1);
+  font-weight: 700;
 }
 .search-box {
   border-radius: 20px;
@@ -341,29 +352,39 @@ nav ul li a {
   display: block;
 }
 .hero-cta {
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
   gap: 1rem;
   align-items: center;
   text-indent: 1rem;
+  width: fit-content;
+  transition: all .3s ease;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.466);
+  border-radius: 10px;
 }
-.hero-cta p {
+.hero-cta:hover{
+  transform: scale(1.05);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.466);
+}
+.hero-cta:active{
+  transform: scale(1);
+}
+.hero-cta > a {
+  text-decoration: none;
   font-size: 1.8rem;
   color: var(--primary-color1);
   font-family: ibmPlex;
   font-weight: 600;
 }
 .hero-cta-button img {
+  box-sizing: content-box;
   width: 30px;
+  height: 30px;
+  padding: .1rem .5rem;
 }
 .hero-cta-button {
   appearance: none;
-  background: var(--bg-color2);
   border: none;
-  height: 40px;
-  width: 40px;
-  border-radius: 30px;
-  align-items: center;
-  justify-content: center;
+  background: none;
 }
 .capsule {
   background-color: var(--bg-color3);
@@ -870,4 +891,5 @@ footer p {
 }
 .footer-links img:hover {
   animation: scaleRotate .5s ease forwards;
+  filter: drop-shadow(0 1px 5px #98faec);
 }
