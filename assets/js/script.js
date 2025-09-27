@@ -94,3 +94,27 @@ const typed = new Typed(".dynamic-title", {
   backSpeed: 100,
   loop: true,
 });
+
+// Theme
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.querySelector(".theme-icon")
+const body = document.body;
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    body.classList.add(savedTheme);
+} else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.add('theme-dark');
+}
+
+themeToggle.addEventListener('click', () => {
+    if (body.classList.contains('theme-light')) {
+        body.classList.remove('theme-light');
+        themeIcon.src = "../assets/images/icons/sun.svg"
+        localStorage.setItem('theme', 'theme-dark'); 
+      } else {
+        body.classList.add('theme-light');
+        themeIcon.src = "../assets/images/icons/moon.png"
+        localStorage.setItem('theme', 'theme-light'); 
+    }
+});
