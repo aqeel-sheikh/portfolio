@@ -15,7 +15,6 @@ gsap.from(".hero-section .fadeUp", {
   opacity: 0,
   y: 40,
   duration: 1,
-  stagger: 0.1,   
   ease: "power2.out"
 });
 // Scroll based
