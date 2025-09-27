@@ -260,8 +260,18 @@ nav ul li a {
 }
 .hero-title {
   align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-title p:first-child{
+  color: var(--primary-color1);
+  font-size: 3rem;
+  white-space: no-wrap;
+}
+.hero-title p:last-child{
   color: var(--primary-color3);
-  font-size: 4rem;
+  font-size: 1rem;
 }
 .hero-content {
   padding: 1rem;
@@ -900,12 +910,4 @@ footer p {
 .scrollAnimate {
   opacity: 0;
   transform: translateY(100px) scale(0.9);
-}
-/* Typewriter effect */
-.typewriter {
-  position: relative;
-  overflow: hidden;
-  margin-inline: auto;
-  white-space: nowrap;
-  animation: typing 3s steps(22) forwards;
 }
