@@ -896,3 +896,8 @@ footer p {
   animation: scaleRotate .5s ease forwards;
   filter: drop-shadow(0 1px 5px #98faec);
 }
+/* Scroll animation */
+ .scrollAnimate{
+  opacity: 0;
+  transform: translateY(100px) scale(.9);
+}

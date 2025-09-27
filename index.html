@@ -23,11 +23,19 @@
         <ul class="nav-list-right">
           <div class="nav-list-right-left">
             <ul class="nav-list-right-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="./blogs.html">Blogs</a></li>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="./blogs.html">Blogs</a>
+              </li>
             </ul>
             <div class="search-container">
-              <input type="search" class="search-box" placeholder="coming soon"/>
+              <input
+                type="search"
+                class="search-box"
+                placeholder="coming soon"
+              />
               <img src="assets/images/icons/search.svg" alt="search" />
             </div>
           </div>
@@ -62,6 +70,7 @@
         <div class="side-nav">
           <a href="#home" class="active">
             <svg
+            class="fadeUp"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -96,6 +105,7 @@
           </a>
           <a href="#about">
             <svg
+            class="fadeUp"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -116,6 +126,7 @@
           </a>
           <a href="#skills">
             <svg
+            class="fadeUp"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -134,6 +145,7 @@
           </a>
           <a href="#works">
             <svg
+            class="fadeUp"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -150,6 +162,7 @@
           </a>
           <a href="#contact">
             <svg
+            class="fadeUp"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -166,44 +179,44 @@
           </a>
         </div>
         <div class="hero-container container">
-          <p class="hero-title">Developer</p>
+          <p class="hero-title fadeUp">Developer</p>
           <div class="hero-content">
             <div class="hero-content-left">
               <div class="hero-photo-frame">
                 <img
-                  class="profile-photo"
+                  class="profile-photo fadeUp"
                   src="assets/images/pfp.jpg"
                   alt="Profile"
                 />
-                <div class="photo-frame-info">
-                  <h1 class="photo-frame-name">Aqeel</h1>
-                  <p class="photo-frame-text">Frontend web developer</p>
+                <div class="photo-frame-info fadeUp">
+                  <h1 class="photo-frame-name fadeUp">Aqeel</h1>
+                  <p class="photo-frame-text fadeUp">Frontend web developer</p>
                 </div>
               </div>
               <div class="hero-content-left-info">
-                <div class="left-info">
+                <div class="left-info fadeUp">
                   <img src="assets/images/icons/mail.svg" alt="mail" />
                   <p>sheikhakeelw01@gmail.com</p>
                 </div>
-                <div class="left-info">
+                <div class="left-info fadeUp">
                   <img
                     src="assets/images/icons/map-pin.svg"
                     alt="map pin (location)"
                   />
                   <p>India</p>
                 </div>
-                <div class="left-info">
+                <div class="left-info fadeUp">
                   <img
                     src="assets/images/icons/breifcase.svg"
                     alt="breifcase"
                   />
                   <p>Full-time / Freelancer</p>
                 </div>
-                <div class="left-info">
+                <div class="left-info fadeUp">
                   <img src="assets/images/icons/link.svg" alt="website link" />
                   <p>N/a</p>
                 </div>
-                <div class="left-info-label">
+                <div class="left-info-label fadeUp">
                   <span>HTML</span>
                   <span>CSS</span>
                   <span>JS</span>
@@ -215,7 +228,7 @@
                 <p class="tag">&lt;h1&gt;</p>
                 <div class="right-info-title">
                   <p>Hey</p>
-                  <p>I'm <span>Aqeel</span>,</p>
+                  <p>I'm <span class="fadeUp">Aqeel</span>,</p>
                   <p>
                     Frontend Developer
                     <span class="tag">&lt;/h1&gt;</span>
@@ -229,16 +242,16 @@
                 </p>
                 <p class="tag para-tag">&lt;/p&gt;</p>
                 <div class="hero-cta">
-                  <a href="mailto: sheikhakeelw01@gmail.com" >Let's Talk</a>
+                  <a href="mailto: sheikhakeelw01@gmail.com" class="fadeUp">Let's Talk</a>
                   <button class="hero-cta-button">
                     <a href="mailto: sheikhakeelw01@gmail.com">
-                      <img src="assets/images/icons/mail.svg" alt="Mail" />
+                      <img src="assets/images/icons/mail.svg" class="fadeUp" alt="Mail" />
                     </a>
                   </button>
                 </div>
               </div>
               <div class="capsule">
-                <div class="capsule-para">
+                <div class="capsule-para fadeUp">
                   <p>3</p>
                   <p>
                     Programing <br />
@@ -246,7 +259,7 @@
                   </p>
                 </div>
                 <br />
-                <div class="capsule-para">
+                <div class="capsule-para fadeUp">
                   <p>6</p>
                   <p>
                     Development <br />
@@ -260,9 +273,9 @@
       </section>
     </header>
     <main>
-      <section id="about" class="about-section section">
+      <section id="about" class="about-section section scroll-section">
         <div class="about-container container">
-          <div class="about-content">
+          <div class="about-content scrollAnimate">
             <p class="about-content-title">About Me</p>
             <div class="about-content-text">
               <p class="tag">&lt;p&gt;</p>
@@ -301,7 +314,7 @@
         </div>
       </section>
       <section id="skills" class="skills-section section">
-        <div class="skills-container container">
+        <div class="skills-container container scrollAnimate">
           <p class="tag tag1">&lt;div&gt;</p>
           <p class="tag tag2">&lt;div/&gt;</p>
           <div class="skills-title title">
@@ -309,8 +322,10 @@
             <p>I am striving to never stop learning and improving</p>
           </div>
           <div class="skills-content content">
-            <div class="frontend-skills">
-              <p class="skill-card-title"><span>Frontend Skills</span></p>
+            <div class="frontend-skills ">
+              <p class="skill-card-title">
+                <span>Frontend Skills</span>
+              </p>
               <div class="skills-card skills">
                 <figure class="skill-figure skill-html">
                   <img src="assets/images/skills/html.svg" alt="html" />
@@ -327,7 +342,9 @@
               </div>
             </div>
             <div class="tools">
-              <p class="skill-card-title"><span>Dev tools</span></p>
+              <p class="skill-card-title">
+                <span>Dev tools</span>
+              </p>
               <div class="skills-card skills">
                 <figure class="skill-figure skill-git">
                   <img src="assets/images/skills/git.svg" alt="git" />
@@ -344,7 +361,9 @@
               </div>
             </div>
             <div class="soft-skills">
-              <p class="skill-card-title"><span>Soft Skills</span></p>
+              <p class="skill-card-title">
+                <span>Soft Skills</span>
+              </p>
               <div class="skills-card">
                 <p>⚡ Adaptability</p>
                 <p>🧠 Problem solving</p>
@@ -363,7 +382,7 @@
         </div>
       </section>
       <section id="works" class="works-section section">
-        <div class="works-container container">
+        <div class="works-container container scrollAnimate">
           <div class="works-title title">
             <p>Works</p>
             <p>I had the pleasure of working with these awesome projects</p>
@@ -481,15 +500,23 @@
         </div>
       </section>
       <section id="contact" class="contact-section section">
-        <div class="contact-container container">
+        <div class="contact-container container scrollAnimate">
           <div class="contact-title title">
             <p>Contact</p>
             <p>I'm currently available for freelance work</p>
           </div>
           <div class="contact-content content">
             <p class="form-title">Send Me A Message</p>
-            <form id="my-form" action="https://api.web3forms.com/submit" method="POST">
-              <input type="hidden" name="access_key" value="31707477-d8f5-4109-b5f2-393217fd51fb">
+            <form
+              id="my-form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="31707477-d8f5-4109-b5f2-393217fd51fb"
+              />
               <div>
                 <label for="clientName"
                   >Your name* <br />
@@ -521,7 +548,12 @@
                   required
                 ></textarea>
               </label>
-              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="hidden"
+                style="display: none"
+              />
               <button type="submit" id="my-form-button">
                 <span>Send Message </span>
                 <img src="assets/images/icons/send.svg" alt="send" />
@@ -549,7 +581,11 @@
         </a>
       </div>
     </footer>
+    <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/scroll.js"></script>
   </body>
 </html>
