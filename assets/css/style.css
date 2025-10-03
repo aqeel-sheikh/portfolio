@@ -51,6 +51,7 @@ body {
 }
 main .section {
   min-height: 100vh;
+  align-items: center;
 }
 .container {
   display: flex;
@@ -114,6 +115,7 @@ header {
   width: 100%;
   background-color: var(--bg-color);
   flex-direction: column;
+  justify-content: center;
 }
 nav {
   justify-content: space-between;
@@ -122,6 +124,7 @@ nav {
   width: 90%;
   border-bottom: 1px solid #43454d81;
   font-family: "ibmPlex";
+  margin-bottom: auto;
 }
 nav ul {
   gap: 1rem;
@@ -199,6 +202,7 @@ nav ul li a {
 .hero-section {
   width: 100%;
   justify-content: center;
+  margin-bottom: auto;
 }
 .side-nav {
   background-color: var(--side-nav-bg);
@@ -431,6 +435,7 @@ nav ul li a {
 /* About Section */
 .about-section {
   background: var(--bg-color3) url(../images/backgrounds/about.svg);
+  align-items: center;
 }
 .about-content {
   padding: 2rem 0;
@@ -802,7 +807,7 @@ nav ul li a {
   background-image: url("../images/works/luxeBite.png");
 }
 .project2 .image-content {
-  background-image: url("../images/works/scrollScape.png");
+  background-image: url("../images/works/xevron.png");
 }
 /* Contact Section */
 .form-title {
