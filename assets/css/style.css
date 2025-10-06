@@ -335,6 +335,9 @@ nav ul li a {
 .photo-frame-text {
   font-size: small;
 }
+.left-info a{
+  color: var(--primary-color2); 
+}
 .left-info{
   font-size: small;
   gap: 0.5rem;
@@ -804,10 +807,19 @@ nav ul li a {
   transform: translateX(45vmin);
 }
 .project1 .image-content {
-  background-image: url("../images/works/luxeBite.png");
+  background-image: url("../images/works/xevron.png");
+  background-position: top ;
 }
 .project2 .image-content {
-  background-image: url("../images/works/xevron.png");
+  background-image: url("../images/works/vaultflow.png");
+  background-position: top ;
+}
+.project2 .project-name{
+  font-size: 1.1rem;
+}
+.project3 .image-content {
+  background-image: url("../images/works/luxebite.png");
+  background-position: top ;
 }
 /* Contact Section */
 .form-title {
